@@ -1,5 +1,6 @@
-Welcome to my facebook iCal wrapper
-For the unit tests to run fully
- they don't run correctly with the Rake test task right now (I only run them with
+Welcome to my facebook iCal wrapper!
+
+
+The unit tests don't run correctly with the Rake test task right now (I only run them with
 Rubymine's test runner), put your Facebook UID and key in test/config/config.yml (pattern it
 after config_default.yml)
