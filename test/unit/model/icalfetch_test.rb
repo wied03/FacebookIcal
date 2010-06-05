@@ -1,4 +1,4 @@
-require "test_helper_noar"
+require "unit/helpers/model_no_ar"
 require "../app/models/icalfetch"
 
 class IcalfetchTest < Test::Unit::TestCase
