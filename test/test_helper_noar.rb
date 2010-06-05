@@ -1,6 +1,7 @@
 require "test/unit"
 require "../app/models/base_model"
 require 'log4r'
+require 'unit/helpers/config_helper'
 
 class BaseModel
   def createlogger className

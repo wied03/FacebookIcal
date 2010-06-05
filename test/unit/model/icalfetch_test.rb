@@ -57,9 +57,12 @@ class IcalfetchTest < Test::Unit::TestCase
   end
 
   def test_process_ical_feed
-    result = @ical.process_ical_feed "8328955",
-                                     "a7c33745e2",
-                                      15
+    uid = ConfigHelper.it.props['icalfetch_test']['uid']
+    key = ConfigHelper.it.props['icalfetch_test']['key']
+    result = @ical.process_ical_feed uid,
+                                     key,
+                                     15
+
     assert_not_nil result
   end
 
