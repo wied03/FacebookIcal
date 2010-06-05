@@ -1,0 +1,1 @@
+Figure out what log tailing is used for and if it's not important, how to turn it off so Rails doesn't complain about development.log or production.log not existing on startup (even though because of log4r we don't use those files)
