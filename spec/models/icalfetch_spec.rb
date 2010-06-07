@@ -1,3 +1,4 @@
+require File.dirname(__FILE__) + '/../spec_helper'
 require "spec"
 require "yaml_config"
 require "icalfetch"
@@ -53,11 +54,11 @@ describe "Ical Fetch" do
     alarm = event.alarms[0]
     alarm.trigger.should == "-PT22M"
     alarm.description.should == "This is an event reminder"
-    
+
     event = newCal.events[1]
     event.uid.should == event2.uid
     event.alarms.length.should == 1
-    
+
     alarm = event.alarms[0]
     alarm.trigger.should == "-PT22M"
     alarm.description.should == "This is an event reminder"
