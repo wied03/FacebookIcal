@@ -24,9 +24,27 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="rack" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="rails" version="0" bound="GREATER_OR_EQUAL" git="false" />
       </requirement>
       <source from="config/boot.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rspec" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rspec-rails" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
@@ -34,17 +52,10 @@
       </requirement>
       <source from="config/database.yml" />
     </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="yamlconfig" version="0" bound="GREATER_OR_EQUAL" git="false" />
-      </requirement>
-      <source from="config/environment.rb" />
-    </requirement>
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -59,8 +70,10 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v2.3.5, D:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] icalendar (v1.1.4, D:/Ruby/lib/ruby/gems/1.8/gems/icalendar-1.1.4)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] log4r (v1.1.4, D:/Ruby/lib/ruby/gems/1.8/gems/log4r-1.1.4)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] yamlconfig (v1.0.0, D:/Ruby/lib/ruby/gems/1.8/gems/yamlconfig-1.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.0.1, D:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec (v1.3.0, D:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-rails (v1.3.2, D:/Ruby/lib/ruby/gems/1.8/gems/rspec-rails-1.3.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.1.0, D:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0)" level="application" />
   </component>
 </module>
 
