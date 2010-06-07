@@ -34,6 +34,12 @@
       </requirement>
       <source from="config/database.yml" />
     </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="yamlconfig" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
@@ -53,6 +59,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v2.3.5, D:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] icalendar (v1.1.4, D:/Ruby/lib/ruby/gems/1.8/gems/icalendar-1.1.4)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] log4r (v1.1.4, D:/Ruby/lib/ruby/gems/1.8/gems/log4r-1.1.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] yamlconfig (v1.0.0, D:/Ruby/lib/ruby/gems/1.8/gems/yamlconfig-1.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.0.1, D:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1)" level="application" />
   </component>
 </module>

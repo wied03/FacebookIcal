@@ -1,5 +1,6 @@
 require "unit/helpers/model_no_ar"
-require "../app/models/icalfetch"
+require "icalfetch"
+require "yaml_config"
 
 class IcalfetchTest < Test::Unit::TestCase
   def setup
@@ -57,8 +58,11 @@ class IcalfetchTest < Test::Unit::TestCase
   end
 
   def test_process_ical_feed
-    uid = ConfigHelper.it.props['icalfetch_test']['uid']
-    key = ConfigHelper.it.props['icalfetch_test']['key']
+    basepath = File.expand_path(File.dirname(__FILE__))+"/../../config"
+    props = BW::YAMLConfig.new("#{basepath}/config_default.yml",
+                               "#{basepath}/config.yml").props
+    uid = props['icalfetch_test']['uid']
+    key = props['icalfetch_test']['key']
     result = @ical.process_ical_feed uid,
                                      key,
                                      15
