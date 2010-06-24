@@ -1,9 +1,7 @@
 Welcome to my facebook iCal wrapper!
 
-The unit tests don't run correctly with the Rake test task right now (I only run them with
-Rubymine's test runner), put your Facebook UID and key in test/config/config.yml (pattern it
+To run the tests:
+* You need a GEM that's not in the GEM library as of yet (my own bwyamlconfig, source is on Github)
+ (I only run them with Rubymine's test runner)
+* Put your Facebook UID and key in test/config/config.yml (pattern it
 after config_default.yml)
-
-To test this project, you need a GEM that's not in the GEM library as of yet (my own bwyamlconfig).
-
-You can fetch the source from the repository on Github.
