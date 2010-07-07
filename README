@@ -1,3 +1,5 @@
+After I built this, I realized Google Calendar, which I use for my scheduling, already supports assigning reminders to iCal feeds.  I probably will not contribute much to this now, but it was worth the learning experience!
+
 Welcome to my facebook iCal wrapper!
 
 To run the tests:
